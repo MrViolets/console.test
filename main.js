@@ -34,5 +34,4 @@ function testConsoleWatch() {
 
 testConsoleWatch()
 
-console.cpu()
 console.cpu('ignore arg', 'ignore arg 2', ["a", "b", "c"])
