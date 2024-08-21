@@ -35,3 +35,23 @@ function testConsoleWatch() {
 testConsoleWatch()
 
 console.cpu('ignore arg', 'ignore arg 2', ["a", "b", "c"])
+
+const peopleArray = [
+  { name: "John", age: 20 },
+  { name: "Charles", age: 20 },
+  { name: "Jane", age: 25 },
+  { name: "Emily", age: 25 },
+  { name: "Mark", age: 30 }
+];
+
+const peopleObject = {
+  person1: { name: "John", age: 20 },
+  person2: { name: "Charles", age: 20 },
+  person3: { name: "Jane", age: 25 },
+  person4: { name: "Emily", age: 25 },
+  person5: { name: "Mark", age: 30 }
+};
+
+// Grouping by age
+console.groupBy(peopleArray, 'age');
+console.groupBy(peopleObject, 'age');
